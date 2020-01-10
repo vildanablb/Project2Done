@@ -1,0 +1,42 @@
+#leftSide {
+	margin-left: 40px;
+}
+
+#leftSide li.act {
+	background-color: #FFE87C;
+	border-radius: 5%;
+}
+
+article {
+    width: 855px;
+	height: 400px;
+	float: right;
+	margin-right: 30px;	
+}
+article h1 {
+	font-family: sans-serif;
+	margin-left: 25px;
+	font-size: 35px;
+	font-weight: bold;
+	color:#463E3F;
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+
+article p {
+	font-family: sans-serif;
+	font-size: 18px;
+	line-height: 30px;
+	text-align:justify;
+	margin-left: 25px;
+	margin-right: 25px;
+	color: #4E4848;
+}
+
+#picture img {
+	width: 420px;
+	height: 400px;
+	margin-left: 200px;
+	border-radius: 10%;
+	margin-bottom: 20px;
+}

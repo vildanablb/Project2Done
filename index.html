@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dental Polyclinic Smile </title>
+<link rel="stylesheet" type="text/css" href="myStile.css">
+<meta charset="UTF-8">
+<script type="text/javascript">
+
+var slideimages = new Array() 
+slideimages[0] = new Image() 
+slideimages[0].src = "pic1.jpg" 
+slideimages[1] = new Image()
+slideimages[1].src = "pic2.jpg"
+slideimages[2] = new Image()
+slideimages[2].src = "pic3.jpg"
+slideimages[3] = new Image()
+slideimages[3].src = "pic4.jpg"
+
+</script>
+</head>
+
+<body>
+
+
+	<div id="wrapper">
+		<div id="header">
+			<div id="naslovi">
+				<h3> Dental Polyclinic </h3>
+				<h1> "Smile" </h1>
+				<a href="index.html"><img  src="logo.jpg" alt="logo" /></a>
+			</div>			
+		</div>
+		<hr>
+		<div id ="content">
+		 	<div id="leftSide">
+				<ul>
+					<li class="first active"> <a href="index.html" >Home</a></li>
+					<li class="first act"> <a href="AboutUs.html" > About us </a></li>
+					<li class="first actt"> <a href="Services.html" >Services</a></li>
+					<li class="first acttt"> <a href="doctors.html" > Doctors </a></li>
+					<li class="first acti"> <a href="contactUs.html" > Contact us</a></li>
+				</ul>
+		 	</div>
+		 	<div id="rightSide">
+		 		<img src="pic1.jpg" id="slide" />
+		 		<script type="text/javascript">
+					var step=0
+
+					function slideit(){
+					
+					if (!document.images)
+					return
+					document.getElementById('slide').src = slideimages[step].src
+					if (step<3)
+					step++
+					else
+					step=0
+					setTimeout("slideit()",4000)
+					}
+
+					slideit()
+				</script>
+		 	</div>
+		</div>
+
+		<hr>
+
+		<div id="nextPart">
+			<div id="interesting" class="three">
+				<h2> Did you know that... </h2>
+				<p> ...an average person spends 38.5 days brushing their teeth over their lifetime. </p>
+				<p>...no two people have the same set of teeth—your teeth are as unique as your fingerprint, so be proud of your unique set of teeth.</p>
+				<p> ...many diseases are linked to your oral health, including heart disease, osteoporosis, and diabetes. </p>
+				<a href="http://www.123dentist.com/10-fun-facts-about-teeth/" target="_blank"> Read more >> </a>
+			</div>
+			<div id="text" class="three">
+				<h2> Welcome </h2>
+				<p> Welcome to the official page of Dental Polyclinc „Smile“. Years of experience in clinical and research work garanties you high level of dental services with individual approach to every patient.  In very pleasant environment we will enable the best dental care for You and Your family. Our knowledge, constant improvement and long experience are at Your service. </p>
+			</div>
+			<div id="video" class="three">
+				<h2> Check out our new video </h2> 
+				<video width ="330" height ="220" poster="http://www.studio-obris.hr/wp-content/uploads/2013/12/dn_02.jpg" controls>
+					<source src="Dentalpolyclinic.mp4" type="video/mp4">
+				</video>
+			</div>
+		</div>
+		<hr>
+		<div id="footer">
+		 	<p id="copy"> Copyright &copy 2019 </p>
+		 	<div id="find">
+				<p> Find us on </p>
+				<a href="https://www.facebook.com/StomatoloskaOrdinacijaBicakcic" target="_blank"><img  src="fb.png" alt="Facebook" /></a>
+		 	 </div>
+		</div>
+	</div>
+</body>
+</html>
